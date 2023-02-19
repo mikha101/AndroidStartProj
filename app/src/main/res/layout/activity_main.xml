@@ -1,17 +1,246 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constrtLayout"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <!--<TextView
+        android:id="@+id/view_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_constrainedWidth_default="spread"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="172dp"
+        android:text="view_1"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/view_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="56dp"
+        android:text="view_2"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/view_1"
+        app:layout_constraintLeft_toRightOf="@id/view_1" />
+
+    <TextView
+        android:id="@+id/view_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="view_3"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toRightOf="@id/view_1"
+        app:layout_constraintTop_toBottomOf="@id/view_1" />
+
+    <TextView
+        android:id="@+id/view_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:text="view_4"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/view_1"
+        app:layout_constraintLeft_toRightOf="@id/view_1" />
 
 
+    <ImageView
+
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_launcher_background"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="16:9"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/view_A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="132dp"
+        android:layout_marginTop="92dp"
+        android:text="view_A"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/view_B"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="view_B"
+        app:layout_constraintBottom_toTopOf="@id/view_A"
+        app:layout_constraintLeft_toRightOf="@id/view_A"
+        app:layout_constraintTop_toBottomOf="@id/view_A" />
+
+    <TextView
+        android:id="@+id/view_C"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="view_C"
+        app:layout_constraintLeft_toLeftOf="@id/view_A"
+        app:layout_constraintTop_toTopOf="@id/view_B" />
 
 
+    <TextView
+        android:id="@+id/left_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_constraintLeft_toLeftOf="parent"
+        android:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="28dp"
+        android:text="Left View"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/right_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_cjnstraintLeft_toRightOf="@+id/left_view"
+        android:layout_constraintBaseLine_toBaseLineOf="@+id/left_view"
+        android:layout_constraintTop_toTopOf="parent"
+        android:text="Right View"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="51dp" />
+-->
+
+    <TextView
+        android:id="@+id/view_hide5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_goneMarginLeft="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="156dp"
+
+        android:text="view_hide2"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/view_hide4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_goneMarginLeft="50dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="204dp"
+
+        android:text="view_hide2"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="98dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@+id/button4"
+        app:layout_constraintTop_toBottomOf="@+id/view_hide5" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Button"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_hide4" />
+
+    <TextView
+        android:id="@+id/view_hide1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="view_hide1"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/view_hide2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_goneMarginLeft="50dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="128dp"
+
+        android:text="view_hide2"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/view_hide3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_goneMarginLeft="50dp"
+        android:layout_marginTop="40dp"
+        android:text="view_hide2"
+
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/view_hide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_goneMarginLeft="50dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="84dp"
+
+        android:text="view_hide2"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="103dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="324dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="206dp" />
+
+    <!-- app:layout_constraint{x}_to{y}Of="{z}"
+         x - это какой-то constraint привязанной view
+         y - это сторона View к которой привязались
+         z - id view к которой мы привязались-->
 
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
