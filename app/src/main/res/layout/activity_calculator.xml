@@ -31,41 +31,15 @@
 
     <RadioGroup
         android:id="@+id/radiogroup"
-        android:layout_width="0dp"
-        android:layout_height="46dp"
+        android:layout_width="312dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="40dp"
         android:orientation="horizontal"
-        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="@+id/editTextNumberDecimal2"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/editTextNumberDecimal"
         app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimal">
 
-        <RadioButton
-            android:id="@+id/add"
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Add" />
-
-        <RadioButton
-            android:id="@+id/subtract"
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Subtract" />
-
-        <RadioButton
-            android:id="@+id/multiple"
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Multiple" />
-
-        <RadioButton
-            android:id="@+id/divide"
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Divide" />
     </RadioGroup>
 
     <Button
@@ -85,12 +59,48 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="116dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="36dp"
         android:text="You answer will be displayed here"
         app:layout_constraintEnd_toEndOf="@+id/calc"
-        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintHorizontal_bias="0.776"
         app:layout_constraintStart_toStartOf="@+id/calc"
         app:layout_constraintTop_toBottomOf="@+id/calc" />
+
+    <RadioButton
+        android:id="@+id/multiple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Multiple"
+        tools:layout_editor_absoluteX="206dp"
+        tools:layout_editor_absoluteY="130dp" />
+
+    <RadioButton
+        android:id="@+id/divide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Divide"
+        tools:layout_editor_absoluteX="293dp"
+        tools:layout_editor_absoluteY="130dp" />
+
+    <RadioButton
+        android:id="@+id/subtract"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Subtract"
+        tools:layout_editor_absoluteX="116dp"
+        tools:layout_editor_absoluteY="130dp" />
+
+    <RadioButton
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Add"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="130dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
