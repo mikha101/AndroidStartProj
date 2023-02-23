@@ -3,6 +3,7 @@ package ru.synergy.androidstartprj;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
@@ -38,18 +39,25 @@ public class Calculator extends AppCompatActivity {
 //                // Shared prefs с использованием контекста приложения
 //        SharedPreferences prefs = getApplicationContext().getSharedPreferences("PREFS", MODE_PRIVATE);
 //
-//        ////
+//        /////
+
+
+        /////  intent - посылка
+        Intent i = new Intent(Calculator.this, MainActivity.class);
+
+        ///
 
         calculate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Log.d(LogcatTag,"Button have been pushed");
                 calculateAnswer();
+                Intent i = new Intent(Calculator.this, MainActivity.class);  //  создание intent - посылка / "написать письмо"
+                startActivity(i);  // "отправить письмо"
 
             }
         });
     }
-
 
     @Override
     protected void onStart() {
@@ -89,6 +97,10 @@ public class Calculator extends AppCompatActivity {
         RadioButton sub = (RadioButton) findViewById(R.id.subtract);
         RadioButton multiply = (RadioButton) findViewById(R.id.multiple);
         RadioButton divide = (RadioButton) findViewById(R.id.divide);
+
+        numOne.setText("0");
+        numTwo.setText("0");
+        add.setChecked(true);
 
         TextView answer = (TextView) findViewById(R.id.result);
 
