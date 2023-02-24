@@ -108,11 +108,14 @@ public class Calculator extends AppCompatActivity {
         Log.d(LogcatTag, "numone is: " + numOne + ";" + "numtwo is: " + numTwo);
 
 
-//        try {
-//            int a = 25/0;
-//        } catch (ArithmeticException e){
-//            e.printStackTrace();
-//        }
+        try {
+            //int a = 25/0;
+            throw new ArithmeticException("I am generated exception");
+        } catch (ArithmeticException e){
+            //e.printStackTrace();
+            Toast.makeText(this,"There is a problem inside the app", Toast.LENGTH_SHORT).show();
+            finish();
+        }
 
 
         float numone = 0;
